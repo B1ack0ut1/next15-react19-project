@@ -8,6 +8,13 @@
       "when": 1742830212268,
       "tag": "0000_slippery_franklin_richards",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1742917239344,
+      "tag": "0001_chief_genesis",
+      "breakpoints": true
     }
   ]
 }
