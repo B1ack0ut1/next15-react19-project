@@ -83,41 +83,41 @@ export default function CustomerForm({ customer }: Props) {
                             />
                         </div>
                         <div className="flex flex-col gap-4 w-full max-w-xs">
-                        <InputWithLabel<insertCustomerSchemaType>
-                                fieldTitle="Zip Code"
-                                nameInSchema="zip"
+                            <InputWithLabel<insertCustomerSchemaType>
+                                    fieldTitle="Zip Code"
+                                    nameInSchema="zip"
+                                />
+                            <InputWithLabel<insertCustomerSchemaType>
+                                    fieldTitle="Email"
+                                    nameInSchema="email"
+                                />
+                            <InputWithLabel<insertCustomerSchemaType>
+                                    fieldTitle="Phone"
+                                    nameInSchema="phone"
+                                />
+                            <TextAreaWithLabel<insertCustomerSchemaType>
+                                fieldTitle="Notes"
+                                nameInSchema="notes"
+                                className="h-40"
                             />
-                        <InputWithLabel<insertCustomerSchemaType>
-                                fieldTitle="Email"
-                                nameInSchema="email"
-                            />
-                        <InputWithLabel<insertCustomerSchemaType>
-                                fieldTitle="Phone"
-                                nameInSchema="phone"
-                            />
-                        <TextAreaWithLabel<insertCustomerSchemaType>
-                            fieldTitle="Notes"
-                            nameInSchema="notes"
-                            className="h-40"
-                        />
-                        <div className="flex gap-2">
-                            <Button
-                                type="submit"
-                                className="w-3/4"
-                                variant="default"
-                                title="Save"
-                            >
-                                Save
-                            </Button>
-                            <Button
-                                type="button"
-                                variant="destructive"
-                                title="Reset"
-                                onClick={() => form.reset(defaultValues)}
-                            >
-                                Reset
-                            </Button>
-                        </div>
+                            <div className="flex gap-2">
+                                <Button
+                                    type="submit"
+                                    className="w-3/4"
+                                    variant="default"
+                                    title="Save"
+                                >
+                                    Save
+                                </Button>
+                                <Button
+                                    type="button"
+                                    variant="destructive"
+                                    title="Reset"
+                                    onClick={() => form.reset(defaultValues)}
+                                >
+                                    Reset
+                                </Button>
+                            </div>
                         </div>
                     </form>
             </Form>
